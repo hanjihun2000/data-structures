@@ -6,15 +6,15 @@
 */
 
 struct treeNodeCDT {
-	nodeContentT content;
+    nodeContentT content;
 };
 
 treeNodeADT newNode(nodeContentT content) {
-	treeNodeADT node = (treeNodeADT)malloc(sizeof(*node));
-	node->content = content;
-	return node;
+    treeNodeADT node = (treeNodeADT)malloc(sizeof(*node));
+    node->content = content;
+    return node;
 };
 
 nodeContentT getNodeContent(treeNodeADT node) {
-	return node->content;
+    return node->content;
 };
